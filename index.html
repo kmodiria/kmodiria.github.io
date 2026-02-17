@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiana Modirian - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --border: #e0e0e0;
+            --accent: #2563eb;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .links a:hover {
+            opacity: 0.7;
+        }
+
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            font-weight: 600;
+        }
+
+        .projects {
+            display: grid;
+            gap: 40px;
+        }
+
+        .project {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+        }
+
+        .project:hover {
+            border-color: var(--accent);
+        }
+
+        .project-header {
+            margin-bottom: 16px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .project-meta {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .project-description {
+            color: var(--text);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            background: var(--bg);
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 13px;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+
+        .status-in-progress {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-published {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 48px 20px;
+            }
+
+            .project {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kiana Modirian</h1>
+            <p class="subtitle">4th year Cognitive Systems student at UBC specializing in Computational Intelligence and Design. Interested in UX design, product management, and HCI research.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/kianamodirian/" target="_blank">LinkedIn →</a>
+                <a href="https://github.com/kmodiria" target="_blank">GitHub →</a>
+                <a href="mailto:mkikia04@gmail.com">Email →</a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Selected Projects</h2>
+            
+            <div class="projects">
+                <!-- Project 1: Wardrobe App -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">Smart Wardrobe Application</h3>
+                        <p class="project-meta">UX Research & Design • 2024</p>
+                    </div>
+                    <p class="project-description">
+                        Designed an application to help users select outfits from their existing wardrobe based on weather, occasion, and personal preferences. Conducted need-finding studies, usability testing, and delivered a medium-to-high fidelity Figma prototype. Led research design and system architecture while collaborating on all phases of the project.
+                    </p>
+                    <p class="project-description">
+                        <strong>Key Features:</strong> AI-powered outfit suggestions, drag-and-drop customization, three digitization methods (photo capture, barcode scanning, web search), outfit saving functionality.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">Usability Testing</span>
+                        <span class="tag">Prototyping</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/KRsaD4K8a9j6kAgEYKnOad/Wardrobe-App-Prototype?node-id=16-28&p=f&t=AbmkiizwtmoSCPhE-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A28&show-proto-sidebar=1" class="project-link" target="_blank">View Prototype →</a>
+                </div>
+
+                <!-- Project 2: ML Credit Card Default -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">Credit Card Default Prediction Model</h3>
+                        <p class="project-meta">Machine Learning • 2024</p>
+                    </div>
+                    <p class="project-description">
+                        Built an end-to-end ML pipeline to predict credit card defaults using a dataset of 30,000 examples. Performed feature engineering (creating PAY_RATIO metrics), handled class imbalance, and compared four models: Logistic Regression, Random Forest, XGBoost, and Gradient Boosting.
+                    </p>
+                    <p class="project-description">
+                        <strong>Results:</strong> Achieved ROC-AUC of 0.776 with XGBoost after hyperparameter tuning. Used permutation importance and model-based feature importance to identify payment history (PAY_0, PAY_2, PAY_3) as the strongest predictors.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Feature Engineering</span>
+                    </div>
+                    <a href="https://github.com/kmodiria/cpsc330-hw5" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <!-- Project 3: LingoLeap -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">LingoLeap Word Game</h3>
+                        <p class="project-meta">Java • GUI Development • 2023</p>
+                    </div>
+                    <p class="project-description">
+                        Developed a multiplayer word game in Java where 3+ players fill in categories (Color, City, Animal, Flower, Body Part, Food) based on randomly selected letters. Implemented full game logic, scoring system, save/load functionality, and event logging.
+                    </p>
+                    <p class="project-description">
+                        <strong>Technical Implementation:</strong> Built with Java Swing for GUI, implemented player management system, automatic scoring with bonus/penalty logic, and persistent data storage. Applied software design patterns and refactoring principles documented in Phase 4 analysis.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Swing GUI</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">Game Development</span>
+                    </div>
+                    <a href="https://github.com/kmodiria/LingoLeap" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <!-- Project 4: Hobby Discovery -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">Hobby Discovery System
+                            <span class="status-badge status-in-progress">In Progress</span>
+                        </h3>
+                        <p class="project-meta">UX Research & Product Management • 2025</p>
+                    </div>
+                    <p class="project-description">
+                        Leading product management for a system that helps people discover and start new hobbies. Conducted field studies to understand barriers (cost, time commitment, skill level, social comfort) in hobby exploration. Currently developing low-fidelity prototypes informed by research findings.
+                    </p>
+                    <p class="project-description">
+                        <strong>Role:</strong> Managed project timeline, distributed tasks across team, ensured coherence between design requirements and deliverables. Final deliverable will be a high-fidelity Figma prototype and explanatory video.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Product Management</span>
+                        <span class="tag">Field Studies</span>
+                        <span class="tag">UX Research</span>
+                        <span class="tag">Requirements Analysis</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Negotiagent -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">Negotiagent</h3>
+                        <p class="project-meta">nwHacks 2025 • Chrome Extension</p>
+                    </div>
+                    <p class="project-description">
+                        Built an AI-powered Chrome extension that auto-negotiates Facebook Marketplace listings using Gemini 2.0. The extension captures seller constraints (target price, reasoning) and generates negotiation replies that users can approve or edit before sending.
+                    </p>
+                    <p class="project-description">
+                        <strong>Contribution:</strong> Led ideation, developed UI components, contributed to backend integration, and presented to judges. Extension features side panel dashboard for managing active negotiations and DOM injection for seamless marketplace integration.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Chrome Extension</span>
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">Plasmo</span>
+                    </div>
+                    <a href="https://github.com/connormorrrison/nwhacks" class="project-link" target="_blank">View on GitHub →</a>
+                    <a href="https://devpost.com/software/negotimaster" class="project-link" target="_blank">Devpost →</a>
+                </div>
+
+                <!-- Project 6: AI Journaling Research -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3 class="project-title">AI-Augmented Journaling System
+                            <span class="status-badge status-published">CHI EA '25</span>
+                        </h3>
+                        <p class="project-meta">HCI Research • COGS 402 • Supervised by Dr. Cristina Conati</p>
+                    </div>
+                    <p class="project-description">
+                        Collaborating with a PhD student on an AI-powered journaling system published at CHI EA '25. Conducting iterative UX redesigns informed by HCI principles to enhance user interaction with emotion tracking, AI-generated prompts, and semantic retrieval features.
+                    </p>
+                    <p class="project-description">
+                        <strong>Research Process:</strong> Completed first round of HCI-informed redesigns. Currently planning pilot usability studies to identify pain points, followed by a second redesign iteration and final evaluation study. Focus on balancing AI guidance with user autonomy.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HCI Research</span>
+                        <span class="tag">Usability Testing</span>
+                        <span class="tag">Iterative Design</span>
+                        <span class="tag">AI/LLM Integration</span>
+                        <span class="tag">User Studies</span>
+                    </div>
+                    <a href="https://dl.acm.org/doi/10.1145/3706599.3719887" class="project-link" target="_blank">Read Paper →</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built with care • Updated February 2025</p>
+   
